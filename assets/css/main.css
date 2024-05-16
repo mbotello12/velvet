@@ -422,35 +422,40 @@ input, select, textarea {
 			text-align: center;
 			margin: 1em 0;
 		}
-		
+		.rec_container p,
+		.rec_container h2 {
+			padding-top: 1em;
+		}
+
+		.rec_pics{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			align-items: center;
+			
+		}
+		.rec_pics img{
+			width: 45%;
+			padding-top: 2em;
+		}
 /* Row */
 
 	.row {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
-		align-items: stretch;
+		flex-direction: row;
 	}
-	.row img{
-		width: 600px;
-		height: 425px;
-		
-	}
-	.row article{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		
-	}
+
+	
 	
 	.row h2{
 		
 		color: #74349F;
 		font-weight: bold;
 	}
-	.row h4 {
-		text-align: center;
-	}
+	
 	
 		.row > * {
 			box-sizing: border-box;
