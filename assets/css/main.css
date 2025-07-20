@@ -111,7 +111,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: #483949;
+		color: #AA49C7;
 		line-height: 1.25em;
 	}
 
@@ -130,7 +130,7 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.25em;
+		font-size: 1.75em;
 	}
 
 	h4 {
@@ -287,11 +287,15 @@ input, select, textarea {
 	
 
 	
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 900px) {
 
 		.about{
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			padding: 0;
 		}
 		.about section {
 			width: 100%;
@@ -304,8 +308,10 @@ input, select, textarea {
 		}
 	
 		.about section > img{
-			width: 80%;
+			width: 75%;
+			padding: 0;
 		}
+		
 	
 		.about section + section {
 			display: flex;
@@ -314,7 +320,52 @@ input, select, textarea {
 			align-items: flex-start;
 			margin: 10px 0;
 		}
+		.about p{
+			font-size: 20px;
+			
+			line-height: 1.8em;
+		}
+
+	}
+
+	@media (min-width: 1000px) and (max-width:1400px) {
+
+		.about{
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			padding: 0;
+		}
+		.about section {
+			width: 100%;
+		}
+	
+		.about > section {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	
+		.about section > img{
+			width: 75%;
+			padding: 0;
+		}
 		
+	
+		.about section + section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			margin: 10px 0;
+		}
+		.about p{
+			font-size: 24px;
+			
+			line-height: 1.8em;
+		}
 
 	}
 
@@ -421,11 +472,24 @@ input, select, textarea {
 		.recog_title {
 			text-align: center;
 			margin: 1em 0;
+			font-size: 64px;
+			
+			text-decoration: underline;
 		}
-		.rec_container p,
-		.rec_container h2 {
-			padding-top: 1em;
+		
+		
+		.rec_container h2 > a {
+			font-size: 32px;
+			color: #74349F;
+			border-bottom: 1px dotted #74349F;
 		}
+		.rec_container h2 > a:hover{
+			cursor: pointer;
+			color: #df7366;
+			border-bottom-color: transparent;
+		}
+		
+		
 
 		.rec_pics{
 			display: flex;
@@ -438,6 +502,12 @@ input, select, textarea {
 		.rec_pics img{
 			width: 45%;
 			padding-top: 2em;
+		}
+		@media screen and (max-width: 736px) {
+			.recog_title {
+				font-size: 48px;
+		
+			}
 		}
 /* Row */
 
@@ -455,7 +525,8 @@ input, select, textarea {
 		color: #74349F;
 		font-weight: bold;
 	}
-	
+		
+
 	
 		.row > * {
 			box-sizing: border-box;
@@ -2762,8 +2833,34 @@ input, select, textarea {
 			.close-button{
 				width:20px
 			}
+			.header_logo{
+				width: 100%;
+			}
 		}
 
+		/* Iframe */
+		iframe{
+			border:none;
+			overflow:auto;
+		}
+		
+		/* header logo */
+		.header_logo{
+			width: 30%;
+		}
+		.page_header{
+			font-size:4em;
+		}
+		@media screen and (max-width: 736px){
+			
+			.header_logo{
+				width: 75%;
+				padding-bottom: 22px;
+			}
+			.page_header{
+				font-size: 2em;
+			 }
+		}
 /* Footer */
 
 	#footer {
@@ -3072,7 +3169,7 @@ input, select, textarea {
 			}
 
 			h3 {
-				font-size: 1.25em;
+				font-size: 1.5em;
 			}
 
 			hr {
