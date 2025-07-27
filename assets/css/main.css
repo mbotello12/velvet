@@ -2009,6 +2009,16 @@ input, select, textarea {
 		margin: 0 0 1em 0;
 	}
 
+	#main-logo {
+		width: 60%;
+	}
+
+	@media screen and (max-width:980px){
+		#main-logo{
+			width: 90%;
+		}
+	}
+
 		header > p {
 			display: block;
 			font-size: 1.5em;
@@ -2410,7 +2420,7 @@ input, select, textarea {
 	.wrapper {
 		background: #fff;
 		margin: 0 0 2em 0;
-		padding: 6em 0 6em 0;
+		padding: 3em 0 6em 0;
 	}
 
 		.wrapper.style2 {
@@ -2425,7 +2435,7 @@ input, select, textarea {
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
-		color: #A146C0;
+		color: #690182;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
 		cursor: default;
@@ -2570,7 +2580,11 @@ input, select, textarea {
 		}
 	}
 
-
+/* Portfolio header */
+.portfolio-text {
+	font-size: 1.5em;
+	line-height: 1.25em;
+}
 /* Nav */
 
 	#nav {
@@ -2845,6 +2859,10 @@ input, select, textarea {
 		}
 		
 		/* header logo */
+		header > a{
+			border: none;
+		}
+
 		.header_logo{
 			width: 30%;
 		}
