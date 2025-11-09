@@ -75,6 +75,20 @@
 					visibleClass: 'navPanel-visible'
 				});
 
+	//Popup
+	
+	// window.addEventListener('load', () => {
+	// 	const el = document.querySelector('.pop-up');
+	// 	// Give it a tick so the browser paints opacity 0 first
+	// 	setTimeout(() => {
+	// 	  el.classList.add('active');
+	// 	}, 100);
+	//   });
+
+	//   document.querySelector(".pop-up-btn").addEventListener("click", () => {
+	// 	document.querySelector(".pop-up").style.display = 'none'
+	//   })
+	  
 	// Carousels.
 		$('.carousel').each(function() {
 

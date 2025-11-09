@@ -368,6 +368,41 @@ input, select, textarea {
 		}
 
 	}
+	/* Blog */
+	.blog_header {
+		font-size: 48px;
+		margin: 0;
+	}
+
+	.blog_hr {
+		top: 1.5em;
+		margin-bottom: 6em;
+	}
+	.blog-container{
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.blog {
+		width:32%;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.blog div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.blog h3 {
+		text-align: center;
+	}
+
+	.blog-img img{
+		width: 100%;
+	}
 
 	/* Pricing and Packages */
 
@@ -2759,97 +2794,52 @@ input, select, textarea {
 		#main section:first-of-type {
 			padding-top: 0;
 		}
-		.popup{
+
+		.pop-up{
 			position: fixed;
 			top: 50%;
-			left:50%;
-			transform: translate(-50%, -50%) scale(0);
-			transition: 200ms ease-in-out;
-			border: 1px solid rgb(161, 70, 192);
-			border-radius: 10px;
+			left: 50%;
+			transform: translate(-50% , -50%) scale(1);
 			z-index: 10;
-			background-color: #FAF6F5;
-			background-image: url(../css/images/Website\ Pricing\ Sheet.png);
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-			width: 800px;
-			max-width: 80%;
-			height: 80vh;
-			pointer-events: none;
-			
-		}
-		.popup.active{
-			transform: translate(-50%, -50%) scale(1);
-			pointer-events: all;
-		}
-	
-		.popup-header{
-			padding: 10px 15px;
+			height: 100vh;
 			display: flex;
-			justify-content: flex-end;
+			justify-content: space-evenly;
 			align-items: center;
+			flex-direction: column;
+			opacity: 0;
+			transition: opacity 2.5s ease-in-out;
 			
 		}
-	
-		.popup-header .close-button{
-			cursor: pointer;
-			border: none;
-			outline: none;
-			font-size: .75rem;
-			font-weight: bold;
+		.pop-up img {
+			width: 70%;
+			border-radius: 10px;
 		}
-		.popup-body{
-			height: 70vh;
+		.pop-up-btn {
 			display: flex;
-			align-items: flex-end;
-			justify-content: center;
-		}
-		.popup-body iframe{
 			width: 100%;
-			height: 100%;
+			justify-content: space-evenly;
 		}
-		.popup button{
-			align-items: flex-end;
+		.pop-up.active {
+			opacity: 1;
 		}
 	
-		#overlay{
-			position: fixed;
-			opacity: 0;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			transition: 200ms ease-in-out;
-			background-color: rgba(0, 0, 0, 0.5);
-			pointer-events: none;
-		}
-		#overlay.active{
-			opacity: 1;
-			pointer-events: all;
-		}
+	
 		@media screen and (max-width: 736px){
-			.popup{
-				height: 60vh;
-			}
-
-			.popup-body{
-				height:54vh;
-			}
-			#info {
-				width:150px;
-				margin-left: 105px;
-			}
-
-			.book{
-				width: 200px;
-			}
-			.close-button{
-				width:20px
-			}
-			.header_logo{
+			.pop-up{
+				height: 80vh;
 				width: 100%;
 			}
+			
+			.pop-up-btn{
+				width: 80%;
+				justify-content: space-around;
+			}
+			.pop-up-btn button {
+				width: 35%;
+				padding: 15px;
+			}
+
+			
 		}
 
 		/* Iframe */
