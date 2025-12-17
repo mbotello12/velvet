@@ -88,7 +88,34 @@
 	//   document.querySelector(".pop-up-btn").addEventListener("click", () => {
 	// 	document.querySelector(".pop-up").style.display = 'none'
 	//   })
-	  
+
+	// BaseUrl
+
+	const baseUrl = window.location.href
+
+	// Facebook Share
+	const fbBtn = document.querySelector('.facebook-share');
+	if (fbBtn) {
+	  fbBtn.addEventListener('click', () => {
+		const fbUrl = `https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`;
+		window.open(fbUrl, '_blank');
+	  });
+	}
+	
+	const copyBtn = document.querySelector('.copy-link');
+	const copyMsg = document.querySelector('.copy-confirm');
+	if (copyBtn && copyMsg) {
+	  copyBtn.addEventListener('click', async () => {
+		try {
+		  await navigator.clipboard.writeText(window.location.href);
+		  copyMsg.style.display = 'block';
+		  setTimeout(() => (copyMsg.style.display = 'none'), 2000);
+		} catch (err) {
+		  alert('Link did not copy');
+		}
+	  });
+	}
+
 	// Carousels.
 		$('.carousel').each(function() {
 
@@ -230,40 +257,40 @@
 
 })(jQuery);
 
-const openPopupButtons = document.querySelectorAll('[data-popup-target]')
-const closePopupButtons = document.querySelectorAll('[data-close-button]')
-const overlay = document.getElementById('overlay')
+// const openPopupButtons = document.querySelectorAll('[data-popup-target]')
+// const closePopupButtons = document.querySelectorAll('[data-close-button]')
+// const overlay = document.getElementById('overlay')
 
-openPopupButtons.forEach(button => {
-	button.addEventListener('click', () => {
-		const popup = document.querySelector(button.dataset.popupTarget)
-		openPopup(popup)
-	})
-})
+// openPopupButtons.forEach(button => {
+// 	button.addEventListener('click', () => {
+// 		const popup = document.querySelector(button.dataset.popupTarget)
+// 		openPopup(popup)
+// 	})
+// })
 
-overlay.addEventListener('click', () => {
-	const popup = document.querySelectorAll('.popup.active')
-	popup.forEach(popup => {
-		closePopup(popup)
-	})
-})
+// overlay.addEventListener('click', () => {
+// 	const popup = document.querySelectorAll('.popup.active')
+// 	popup.forEach(popup => {
+// 		closePopup(popup)
+// 	})
+// })
 
-closePopupButtons.forEach(button => {
-	button.addEventListener('click', () => {
-		const popup = button.closest('.popup')
-		closePopup(popup)
-	})
-})
+// closePopupButtons.forEach(button => {
+// 	button.addEventListener('click', () => {
+// 		const popup = button.closest('.popup')
+// 		closePopup(popup)
+// 	})
+// })
 
-function openPopup(popup) {
-	if (popup == null) return
-	popup.classList.add('active')
-	overlay.classList.add('active')
+// function openPopup(popup) {
+// 	if (popup == null) return
+// 	popup.classList.add('active')
+// 	overlay.classList.add('active')
 
-}
-function closePopup(popup) {
-	if (popup == null) return
-	popup.classList.remove('active')
-	overlay.classList.remove('active')
+// }
+// function closePopup(popup) {
+// 	if (popup == null) return
+// 	popup.classList.remove('active')
+// 	overlay.classList.remove('active')
 
-}
+// }
