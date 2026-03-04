@@ -1,33 +1,88 @@
-Helios by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# Velvet Pumpkin Portraits – Production Website
 
+Live Site: https://velvetpumpkinportraits.com
 
-This is Helios, a brand new site template for HTML5 UP. It's clean, modern, and designed
-to take advantage of larger (well, wider) displays while still being capable of gracefully
-scaling down to fit all manner of smaller ones.
+# Overview
 
-Demo images* courtesy of Michael Domaradzki, an awesome photographer I met over at
-deviantART. Check out his portfolio here:
+Velvet Pumpkin Portraits is a production marketing website built using semantic HTML, modular CSS, and vanilla JavaScript. The site was developed as a lightweight, performance-focused static implementation optimized for high-resolution photography, mobile responsiveness, and conversion-driven user flow.
 
-http://md.photomerchant.net/
+The primary focus of this project was performance, accessibility, SEO structure, and clean front-end architecture without reliance on frameworks or CMS platforms.
 
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Michaels's work without his explicit permission!)
+## Application Type
+Static, client-rendered website.
 
-AJ
-aj@lkn.io | @ajlkn
+## Core Stack
 
+* HTML5 (semantic markup)
+* CSS3 (custom styling, responsive layouts)
+* Vanilla JavaScript (DOM manipulation, interaction logic)
 
-Credits:
+## Hosting
+* Deployed to production with HTTPS
+* Static asset hosting
+* Optimized for CDN delivery (if applicable)
 
-	Demo Images:
-		Michael Domaradzki (md.photomerchant.net)
+# Technical Implementation
+1. Semantic HTML Structure
+* Proper document hierarchy (single H1 per page)
+* Sectioned layout using header, section, nav, footer
+* Accessible form labeling
+* Structured content for SEO indexing
 
-	Icons:
-		Font Awesome (fontawesome.io)
+2. CSS Architecture
+* Mobile-first responsive design
+* Flexbox for layout systems
+* Media queries for breakpoint control
+* Reusable utility classes for spacing and alignment
+* Optimized CSS delivery to reduce unused styles
+* Consistent typographic scale and spacing system
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+3. JavaScript Functionality
+* Vanilla JS for interactive elements
+* Event listeners for navigation and CTA behaviors
+* Form handling and validation
+* Lightweight script footprint (no external frameworks)
+* Deferred script loading to prevent render blocking
+
+4. Performance Optimization
+* Compressed and properly sized images
+* Minimized CSS and JS
+* Reduced render-blocking resources
+* Clean DOM depth to improve rendering performance
+* Designed to maintain fast load times despite image-heavy content.
+
+5. SEO Optimization
+* Semantic markup
+* Optimized metadata (title, description)
+* Structured heading hierarchy
+* Image alt attributes
+* Logical internal linking structure
+
+6. Conversion-Focused UI Design
+* Clear visual hierarchy
+* Strategic CTA placement
+* Optimized form UX to reduce friction
+* Mobile-first booking flow
+
+## Features
+* Fully responsive layout
+* Photography portfolio/gallery display
+* Seasonal promotional sections
+* Lead capture form
+* Optimized performance for media-heavy content
+* Lightweight, framework-free implementation
+
+## Development Responsibilities
+* Full front-end development
+* Layout architecture and responsive design
+* Performance tuning
+* SEO structural implementation
+* Interactive behavior development using vanilla JavaScript
+* Production deployment
+
+## Key Objectives
+* Deliver high-performance static site architecture
+* Showcase a photography portfolio effectively
+* Improve search visibility
+* Maximize booking conversions
+* Maintain scalability for future seasonal updates
